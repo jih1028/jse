@@ -18,6 +18,13 @@ public class TimeCalc {
 		min = sec % 3600 / 60;
 		sec = sec % 3600 % 60;
 		
+		/** 서진 코딩
+		 *  int min = sec / 60;
+		 *  sec %= 60;
+		 *  int hour = min / 60;
+		 *  min %= 60;
+		 */
+		
 		if (hour > 0) {
 			System.out.println(hour+"시간"+min+"분"+sec+"초 입니다.");
 		}else if(min > 0){
