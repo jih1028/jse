@@ -33,7 +33,7 @@ public class Kaup {
 		System.out.println("몸무게를 입력하세요 : ");
 		weight = scanner.nextDouble();
 		
-		double index = ( weight / ( height*height))*10000;
+		int index = (int) (( weight / ( height*height))*10000);
 		String state="";
 		if (index > 30) {
 			state = "비만";
