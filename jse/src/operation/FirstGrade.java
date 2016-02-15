@@ -14,7 +14,12 @@ public class FirstGrade {
 		
 		
 		Scanner scanner = new Scanner(System.in);
-		String topName = "";
+		
+		//지역변수는 반드시 초기화를 해야한다.
+		//초기화란 최초 지역변수를 선언할 때 null 값을 할당하는 것
+		//변수는 카멜표기법(낙타) 으로 표기한다 firstName
+		//클레스는 파스칼표기법 으로 표기한다. FirstName
+		String topName = "";//지역변수 local variable
 		int topPoint = 0;
 		
 		String stdName1 ="";
