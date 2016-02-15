@@ -27,14 +27,15 @@ public class ReportCard {
 		total = kor + eng + math + sci;
 		avg = (double)total / 4;
 		
-		System.out.print("총점:" + total + " 평균:" + avg +"으로 ");
+		
+		String result = "총점:" + total + " 평균:" + avg +"으로 ";
 		if (avg >= 90.0) {
-			System.out.println("장학생입니다!");
+			System.out.println(result+"장학생입니다!");
 		} else if(avg >= 60.0){
-			System.out.println("합격입니다!");	
+			System.out.println(result+"합격입니다!");	
 		}
 		else {
-			System.out.println("불합격입니다!");
+			System.out.println(result+"불합격입니다!");
 		}
 
 	}
