@@ -25,8 +25,14 @@ public class ReportCard {
 		int total = 0;
 		double avg = 0.0;
 		total = kor + eng + math + sci;
-		avg = total / 4;
+		avg = (double)total / 4;
 		System.out.println("총점:" + total + "     평균:" + avg);
+		
+		if (avg >= 60.0) {
+			System.out.println("합격입니다!");
+		} else {
+			System.out.println("불합격입니다!");
+		}
 
 	}
 
