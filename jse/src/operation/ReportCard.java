@@ -33,8 +33,7 @@ public class ReportCard {
 			System.out.println(result+"장학생입니다!");
 		} else if(avg >= 60.0){
 			System.out.println(result+"합격입니다!");	
-		}
-		else {
+		}else {
 			System.out.println(result+"불합격입니다!");
 		}
 
