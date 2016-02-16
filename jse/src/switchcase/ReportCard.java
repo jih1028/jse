@@ -49,7 +49,7 @@ public class ReportCard {
 		case 7:results = "합격";break;
 		case 6:results = "합격";break;
 		default:results = "불합격";break;
-
+		
 		}
 		
 		System.out.println(result+results+"입니다!!!");
