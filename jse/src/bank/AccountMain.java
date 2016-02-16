@@ -20,6 +20,6 @@ public class AccountMain {
 		System.out.println(acc.withdraw(1500));
 		
 		System.out.println(acc.search());
-		
+		 
 	}
 }
