@@ -1,6 +1,9 @@
 package bank;
 
 public interface AdminService {
+	
+	//1. 통장개설
+	String open(String name, int password);
 	//1. 전체 계좌 수 조회
 	public int countAll();
 	//2. 계좌번호로 해당 계좌 정보 조회
