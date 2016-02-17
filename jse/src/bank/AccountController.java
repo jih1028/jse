@@ -6,21 +6,21 @@ public class AccountController {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		AccountService  acc = new AccountServiceImple();
-		AdminService adminService = new AdminServiceImple();
+		//AdminService adminService = new AdminServiceImple();
 		while (true) {
 			System.out.println("업무선택 : 1.계좌개설 2.입금 3.출금 4.잔액조회 5.종료");
 
 			switch (scanner.nextInt()) {
 			case 1:
 				System.out.println("이름? 비번? ");
-				System.out.println(adminService.open(scanner.next(), scanner.nextInt()));
+				System.out.println(acc.open(scanner.next(), scanner.nextInt()));
 				break;
 			case 2:
-				System.err.println("입금 금액 : ");
+				System.out.println("입금 금액 : ");
 				System.out.println(acc.deposit(scanner.nextInt()));
 				break;
 			case 3:
-				System.err.println("출금 금액 : ");
+				System.out.println("출금 금액 : ");
 				System.out.println(acc.withdraw(scanner.nextInt()));
 				break;
 			case 4:

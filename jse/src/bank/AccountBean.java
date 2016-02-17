@@ -15,7 +15,7 @@ public class AccountBean {
 		//4자리 수의 랜덤한 숫자
 		//1000이 시작값, 9999는 마지막값
 		// 0.0<= Math.random() < 1 
-		this.accountNo =  (int) (Math.random() * 9000 ) + 1000 ;;
+		this.accountNo =  (int) (Math.random() * 9000 ) + 1000 ;
 		
 		// TODO Auto-generated constructor stub
 	}

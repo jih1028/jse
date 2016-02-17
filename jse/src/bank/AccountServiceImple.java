@@ -3,10 +3,23 @@ package bank;
 import java.util.Scanner;
 
 public class AccountServiceImple implements AccountService{
+	
+	AccountBean account;
+	
+	public AccountServiceImple() {
+		account = new AccountBean();
+	}
 
-	AccountBean account = new AccountBean();
-	
-	
+	@Override
+	public String open(String name, int password) {
+		// 1. 통장개설
+		
+		account.setName(name);
+		account.setPassword(password);
+		
+		
+		return account.toString();
+	}
 
 
 	@Override
@@ -22,7 +35,7 @@ public class AccountServiceImple implements AccountService{
 
 	@Override
 	public String withdraw(int money) {
-
+		
 		if(account.getMoney() >= money){
 			int totalMoney = account.getMoney()-money;
 			account.setMoney(totalMoney);
@@ -30,7 +43,7 @@ public class AccountServiceImple implements AccountService{
 		}else{
 			return "잔액부족";
 		}
-		// 3. 출금
+		// 3. 출금 ALT+SHIFT+M : 메소드로 추출하는 단축키
 		
 	}
 
